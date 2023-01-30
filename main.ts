@@ -19,3 +19,4 @@ Rounds = 0
 Ties = 0
 OLED.writeStringNewLine("play")
 basic.pause(2000)
+updatescore()
