@@ -2,16 +2,19 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("A")
     PA += 1
     Rounds += 1
+    updatescore()
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showString("T")
     Ties += 1
     Rounds += 1
+    updatescore()
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("B")
     PB += 1
     Rounds += 1
+    updatescore()
 })
 input.onGesture(Gesture.Shake, function () {
     reset()
@@ -34,6 +37,7 @@ function reset () {
     Ties = 0
     OLED.writeStringNewLine("play")
     basic.pause(2000)
+    basic.clearScreen()
     updatescore()
 }
 let PB = 0
