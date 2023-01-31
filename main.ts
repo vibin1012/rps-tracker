@@ -18,6 +18,7 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     reset()
+    basic.clearScreen()
 })
 function updatescore () {
     OLED.clear()
@@ -37,7 +38,6 @@ function reset () {
     Ties = 0
     OLED.writeStringNewLine("play")
     basic.pause(2000)
-    basic.clearScreen()
     updatescore()
 }
 let PB = 0
