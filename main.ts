@@ -17,8 +17,8 @@ input.onButtonPressed(Button.B, function () {
     updatescore()
 })
 input.onGesture(Gesture.Shake, function () {
-    reset()
     basic.clearScreen()
+    reset()
 })
 function updatescore () {
     OLED.clear()
